@@ -354,7 +354,7 @@ export function TravelEssentials({ onMenu }) {
 }
 
 export function EnhancedSafety({ onMenu }) {
-  const [tracking, setTracking] = useState(false);
+// const [tracking, setTracking] = useState(false);
   return (
     <div style={{ minHeight:'100vh', background:'var(--cream)', paddingBottom:20 }}>
       <Header title="Enhanced Safety" onMenu={onMenu} />
