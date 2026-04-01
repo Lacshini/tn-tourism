@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --saffron: #FF6B00;
+  --saffron-light: #FFF0E6;
+  --saffron-dark: #CC5500;
+  --green: #1B8A4C;
+  --green-light: #E6F5ED;
+  --gold: #D4A017;
+  --gold-light: #FDF6E3;
+  --dark: #1A0A00;
+  --mid: #6B3A1F;
+  --cream: #FFFAF5;
+  --white: #FFFFFF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { height: 100%; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-shell {
+  max-width: 420px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: var(--cream);
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 0 0 60px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.fade-up   { animation: fadeUp 0.5s ease both; }
+.fade-up-1 { animation: fadeUp 0.5s ease 0.1s both; }
+.fade-up-2 { animation: fadeUp 0.5s ease 0.2s both; }
+.fade-up-3 { animation: fadeUp 0.5s ease 0.3s both; }
+.fade-up-4 { animation: fadeUp 0.5s ease 0.4s both; }
+.fade-up-5 { animation: fadeUp 0.5s ease 0.5s both; }
